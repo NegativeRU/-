@@ -76,25 +76,17 @@
 	<p>
 		<span class="code">< p>< / p></span> - Присоединение к HTML файлу файлов JS скриптов или выполнение JS кода
 	</p>
-    <div>Фамилия</div>
-	<p>
-	</p>
-		<input class="pole" type="text" placeholder="Введите вашу фамилию">
-	
-	<p>
-	</p>
-		<div>Имя</div>
-	<p>
-	</p>
-		<input class="pole" type="text" placeholder="Введите ваше имя">
-	
 
-	<p><input type="checkbox">Согласен с условиями пользовательского</p><p>&emsp; соглашения<p>
-	</p>
+	
+	<form id="loginForm"> 
+    <p id="usernameLabel">Фамилия:</p>
+    <input type="text" name="username" id="username" placeholder="username"/><br>
+    <p id="passwordLabel">Имя: </p>
+    <input type="password" name="password" id="password" placeholder="password"/><br>
+    <input id="loginButton" type="submit" value="отправить!" onsubmit="validateForm()">
+</form>
+<p id="loginMessage">Согласен с условиями пользовательского</p><p>&emsp; соглашения<p>
 
-	<div class="left">
-		<button class="button">ОТПРАВИТЬ</button>
-		<p id="index"></p>
-	</div>
+	
    </body>
 </html>
